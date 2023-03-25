@@ -18,7 +18,7 @@ class OpenAIController extends Controller
         ]);
          
         return response()->json([
-            'result' => $result,
+            'result' => $result['choices'],
         ]);
 
     }
