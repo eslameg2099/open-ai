@@ -14,7 +14,7 @@ class OpenAIController extends Controller
             'model' => 'text-davinci-003',
             'prompt' => $Request->text,
             'max_tokens'=>2048,
-            'n'=>1,
+            'n'=>2,
         ]);
          
         return response()->json([
