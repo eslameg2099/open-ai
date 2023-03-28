@@ -10,7 +10,7 @@ class OpenAIController extends Controller
     public function index(Request $Request)
     {
      
-        $result = OpenAI::completions(3)->create([
+        $result = OpenAI::completions(6)->create([
             'model' => 'text-davinci-003',
             'prompt' => $Request->text,
             'max_tokens'=>2048,
