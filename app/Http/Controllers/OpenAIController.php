@@ -10,7 +10,7 @@ class OpenAIController extends Controller
     public function index(Request $Request)
     {
      
-         $result = OpenAI::completions(6)->create([
+         $result = OpenAI::completions()->create([
             'model' => 'text-davinci-003',
             'temperature'=>1,
             'top_p'=>1,
