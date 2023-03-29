@@ -12,10 +12,10 @@ class OpenAIController extends Controller
      
          $result = OpenAI::completions(6)->create([
             'model' => 'text-davinci-003',
-            'temperature'=>0.7,
+            'temperature'=>1,
             'top_p'=>1,
             'prompt' => $Request->text,
-            'max_tokens'=>2048,
+            'max_tokens'=>20,
             'n'=>1,
         ]);
          
