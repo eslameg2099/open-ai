@@ -15,7 +15,7 @@ class OpenAIController extends Controller
             'temperature'=>1,
             'top_p'=>1,
             'prompt' => $Request->text,
-            'max_tokens'=>20,
+            'max_tokens'=>2048,
             'n'=>1,
         ]);
          
