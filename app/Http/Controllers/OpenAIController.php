@@ -11,7 +11,7 @@ class OpenAIController extends Controller
     {
      
          $result = OpenAI::completions()->create([
-            "model" => "text-davinci-003",
+            "model" => "gpt-3.5-turbo",
             "temperature" => 0.7,
             "top_p" => 1,
             "frequency_penalty" => 0,
